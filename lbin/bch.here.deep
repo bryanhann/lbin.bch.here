@@ -1,6 +1,6 @@
 #!/bin/bash
 main () {
-    local dir=$(bch.upfind .bch/bch.this)
+    local dir=$(bch.upfind .bch/bch.here)
     [ -z "${dir}" ] && return 1   # XXX is -z corect?
     [ ! -d ${dir} ] && return 2
     echo $dir

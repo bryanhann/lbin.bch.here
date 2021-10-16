@@ -1,0 +1,16 @@
+#!/bin/sh
+cat <<USAGE
+The BCH.HERE command suite
+
+    BASE is the path to the nearest superdirectory
+    to the current working directory such that the
+    subdirectory [BASE/.bch/bch.here/] exists. 
+
+    DEEP is the path to that subdirectory.
+
+COMMANDS:
+    bch.here                print this help
+    bch.here.base           print BASE to stdout (if found).
+    bch.here.deep           print DEEP to stdout (if found).
+    bch.here.main ARGS*     run DEEP/main ARGS*
+USAGE
