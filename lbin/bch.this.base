@@ -1,0 +1,3 @@
+#!/bin/bash
+xx=$(bch.this.deep)
+[ ! "${xx}" == "" ] && echo $(dirname $(dirname $xx))

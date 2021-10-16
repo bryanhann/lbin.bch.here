@@ -1,0 +1,12 @@
+#!/bin/bash
+PROG=$(basename $0)
+main () {
+    target=$(bch.this.deep)/main
+    [ ! -f $target ] && {
+        echo "[$PROG]:  main not found at following:"
+        echo "        [$target]"
+        return 66
+    }
+    ${target} $*
+}
+main $*

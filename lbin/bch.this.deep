@@ -1,0 +1,8 @@
+#!/bin/bash
+main () {
+    local dir=$(bch.upfind .bch/bch.this)
+    [ -z "${dir}" ] && return 1   # XXX is -z corect?
+    [ ! -d ${dir} ] && return 2
+    echo $dir
+}
+main $*
